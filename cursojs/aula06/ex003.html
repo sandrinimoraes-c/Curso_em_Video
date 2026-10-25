@@ -1,0 +1,46 @@
+<!--Define que o documento usa padrão HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br"> <!--idioma-->
+
+<head> <!--cabeça-->
+    <meta charset="UTF-8"> <!--Diferentes cacteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsiva a celulares-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Compatibilidade com navegadores antigos-->
+    <title>Meu primeiro programa...</title> <!--Título da aba do navegador-->
+
+    <!--Area onde ficam os estilos CSS da pagina-->
+    <style>
+        /*corpo - estilo geral da pagina*/
+        body  {
+            background-color: rgb(194, 199, 185); /*cor de fundo*/
+            font: Arial; /*fonte usada no site*/
+        }
+        /*estilo do titulo (h1)*/
+        h1 {
+            font-size: 40pt;
+            color: rgb(136, 136, 76);
+        }
+        /*estilo do paragrafo*/
+        p {
+            font-size: 20pt ;
+            color: rgb(98, 48, 48);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!<h1> <!--Titulo principal da pagina -->
+    <p>Já me livrei da maldição!!</p> <!--paragrafo do texto-->
+
+    <script> //área onde fica o JavaScript 
+        var n1 = Number(window.prompt('Digite um número: ')) // convertendo string para number
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é: ${s}`) //template string
+        //window.alert('A soma é: ' + s)
+    
+        // (number + number) para adição 
+        // (string + string) para concatenação
+                
+    </script>
+</body>
+</html>
